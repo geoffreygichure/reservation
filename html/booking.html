@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="geoffrey gichure">
+<link rel="stylesheet" href="/AIRLINE/css/index.css">
+    <title>Reservation system home</title>
+    
+</head>
+<body>
+    <nav class="navigation">
+        <li><a href="/AIRLINE/html/index.html"> home</a></li>
+        <li><a href="/AIRLINE/html/contact.html">contact</a></li>
+        <li><a href="/AIRLINE/html/about.html">about</a></li>
+        <li><a href="/AIRLINE/html/booking.html">booking</a></li>
+    </nav>
+    <h1 class="page-heading">travellers airways</h1>
+    <div class="phase-image">
+        <img src="/airportimages/airport8.png" alt="airport image">
+        <p class="image-text">the travellers</p>
+    </div>
+    <main id="booking">
+        <!-- booking infomation********************************************************* -->
+        <div class="travelling-info-container">
+        <div class="booking-information">
+            <label for="oneway">oneway</label>
+                <input type="radio"name="direction"  id="oneway" required>
+            <label for="to-back">both ways</label>
+                <input type="radio"name="direction"  id="to-back" required>
+            <p>total cost:<span id="total-cost"></span></p>
+       </div>
+
+        <div class="origin-destination">
+            <p>destiantion :<span  id="destination"></span></p>
+            <p>origin :<span id="origin"></span> </p>
+        </div>
+
+        <div class="day-time">
+            <p>we will be travelling on wenesday</p>
+            <p>boarding time will be from 8:30-9:00am</p>
+            <p> plane will take of at 9:15 am </p>
+        <!-- cancelling button -->
+        </div>
+        <button id="booking-button">cancell</button>
+           </div>
+        <!-- personal infomation ***********************************************************-->
+        <h1 id="filling-infomation-head">fill your personal infomation</h1>
+    <div id="credential-infomation">
+        <form action="/" method="post" id="form-personal-infomation">
+                <li>
+                    <label for="firstname">first name</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </li>
+                <li>
+                    <label for="lastname">last name</label>
+                    <input type="text" id="lastname" name="lastname" reqired>
+                </li>
+                <li>
+                    <label for="tel">phone</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+
+                </li>
+                <li>
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" reqired>
+                </li>
+                <li>
+                    <label for="passport">passport number</label>
+                    <input type="number" id="passport" name="passport" required min="100000" max="999999">
+                </li>
+                <li>
+                <label >gender</label>
+                <select name="gender" id=" gender">
+                    <option value="male"> male</option>
+                    <option value="female"> female</option>
+                    <option value="others"> others</option>
+                </select>
+                 </li>
+            <br>
+            <div id="buttons">  
+                <input type="reset" value="reset">              
+                    <input type="submit" value="BOOK">
+                
+            </div>
+        </form>
+
+    </div>
+
+    </main>
+
+
+
+
+
+
+
+
+    <footer class="footer">
+    this is the footer
+    </footer>
+    
+</body>
+<script src="/AIRLINE/javascript/booking.js"></script>
+</html>
